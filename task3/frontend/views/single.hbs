@@ -1,0 +1,11 @@
+{{>header}}
+{{>navbar}}
+<div class="border border-3 border-primary p-3">
+    {{#if task}}
+        {{task.title}}<br>
+        {{task.content}}<br>
+    {{else}}
+        user not found
+    {{/if}}
+</div>
+{{>footer}}
