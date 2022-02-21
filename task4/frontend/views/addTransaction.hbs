@@ -1,0 +1,23 @@
+{{>header}}
+{{>navbar}}
+    {{#if msg}}
+        <div class="alert alert-danger">
+            {{msg}}
+        </div>
+    {{/if}}
+    <form method="post" >
+        <div class="mb-3">
+            <select class="form-select" aria-label="Default select example" name="transactionType" id="transactionType">
+                <option selected disabled>Transaction Type</option>
+                <option>withdraw</option>
+                <option>deposit</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <input class="form-control" placeholder="value" name="value">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary">add Transaction</button>
+        </div>
+    </form>
+{{>footer}}

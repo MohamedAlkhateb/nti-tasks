@@ -1,0 +1,27 @@
+{{>header}}
+{{>navbar}}
+
+<table class="table table-bordered my-4">
+    <thead>
+        <tr>
+            <th>Transaction Type</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#if isEmpty}}
+            <tr class="alert alert-danger text-center">
+                <td colspan="4">No Transactions to show</td>
+            </tr>
+        {{else}}
+            {{#each transactions}}
+            <tr>
+                <td>{{this.type}}</td>
+                <td>{{this.value}}</td>
+            </tr>
+            {{/each}}
+        {{/if}}
+    </tbody>
+</table>
+{{>footer}}

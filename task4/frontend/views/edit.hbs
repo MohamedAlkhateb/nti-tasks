@@ -1,0 +1,14 @@
+{{>header}}
+{{>navbar}}
+    <form method="post">
+        <div class="mb-3">
+            <input class="form-control" placeholder="id" name="id" disabled value="{{customer._id}}">
+        </div>
+        <div class="mb-3">
+            <input class="form-control" placeholder="name" name="name" value="{{customer.name}}">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary">edit</button>
+        </div>
+    </form>
+{{>footer}}
